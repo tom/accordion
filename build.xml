@@ -1,5 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project basedir=".">
 
-    
+    <target name="clean" description="cleans up build">
+        <delete dir="target"/>
+    </target>
+
+    <path id="compileClassPath">
+        <fileset dir="lib/jars">
+            <exclude name="**/*.jar"/>
+        </fileset>
+    </path>
+
+    <path id="testClassPath">
+        <path id="compileClassPath"/>
+        <fileset dir="target/classes/main">
+            <exclude name="**/*.class"/>
+        </fileset>
+    </path>
+
+    <target name="compile" description="compile source code">
+        <compileTaskDef sourceLocation="src/main/java" outputLocation="target/classes/main"
+                        classPath="compileClassPath"/>
+    </target>
+
+    <target name="compileUnitTest" depends="compile" description="compiles test source code">
+        <compileTaskDef sourceLocation="src/test/unit/java" outputLocation="target/classes/unit/test"
+                        classPath="testClassPath"/>
+    </target>
+
+    <target name="runUnitTests" depends="compileUnitTest" description="run unit tests">
+        <mkdir dir="target/reports/junit"/>
+        <junit>
+            <classpath refid="compileClassPath" />
+            <batchtest todir="target/reports/junit">
+                <fileset dir="src/main/java">
+                    <include name="**/*.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+    </target>
+
+    <macrodef name="compileTaskDef">
+        <attribute name="sourceLocation"/>
+        <attribute name="outputLocation"/>
+        <attribute name="classPath"/>
+        <sequential>
+            <mkdir dir="@{outputLocation}"/>
+            <javac srcdir="@{sourceLocation}" destdir="@{outputLocation}">
+                <classpath id="@{classPath}"/>
+            </javac>
+            <copy todir="@{outputLocation}">
+                <fileset dir="@{sourceLocation}">
+                    <exclude name="**/*.java"/>
+                </fileset>
+            </copy>
+        </sequential>
+    </macrodef>
+
 </project>
