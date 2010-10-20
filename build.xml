@@ -13,6 +13,9 @@
 
     <path id="testClassPath">
         <path refid="compileClassPath"/>
+        <fileset dir="lib/testJars">
+            <include name="**/*.jar"/>
+        </fileset>
         <fileset dir="target/classes/main">
             <include name="**/*.class"/>
         </fileset>
