@@ -7,48 +7,54 @@
 
     <path id="compileClassPath">
         <fileset dir="lib/jars">
-            <exclude name="**/*.jar"/>
+            <include name="**/*.jar"/>
         </fileset>
     </path>
 
     <path id="testClassPath">
-        <path id="compileClassPath"/>
+        <path refid="compileClassPath"/>
         <fileset dir="target/classes/main">
-            <exclude name="**/*.class"/>
+            <include name="**/*.class"/>
         </fileset>
     </path>
 
     <target name="compile" description="compile source code">
         <compileTaskDef sourceLocation="src/main/java" outputLocation="target/classes/main"
-                        classPath="compileClassPath"/>
+                        classPathId="compileClassPath"/>
     </target>
 
     <target name="compileUnitTest" depends="compile" description="compiles test source code">
         <compileTaskDef sourceLocation="src/test/unit/java" outputLocation="target/classes/unit/test"
-                        classPath="testClassPath"/>
+                        classPathId="testClassPath"/>
     </target>
 
     <target name="runUnitTests" depends="compileUnitTest" description="run unit tests">
         <mkdir dir="target/reports/junit"/>
         <junit>
-            <classpath refid="compileClassPath" />
+            <classpath refid="compileClassPath"/>
             <batchtest todir="target/reports/junit">
-                <fileset dir="src/main/java">
+                <fileset dir="src/test/unit/java">
                     <include name="**/*.java"/>
                 </fileset>
             </batchtest>
         </junit>
     </target>
 
+    <target name="jar" depends="runUnitTests" description="build jar">
+        <jar destfile="target/accordion-0.0.1.jar">
+            <fileset dir="target/classes/main">
+                <include name="**/*"/>
+            </fileset>
+        </jar>
+    </target>
+
     <macrodef name="compileTaskDef">
         <attribute name="sourceLocation"/>
         <attribute name="outputLocation"/>
-        <attribute name="classPath"/>
+        <attribute name="classPathId"/>
         <sequential>
             <mkdir dir="@{outputLocation}"/>
-            <javac srcdir="@{sourceLocation}" destdir="@{outputLocation}">
-                <classpath id="@{classPath}"/>
-            </javac>
+            <javac classpathref="@{classPathId}" srcdir="@{sourceLocation}" destdir="@{outputLocation}"/>
             <copy todir="@{outputLocation}">
                 <fileset dir="@{sourceLocation}">
                     <exclude name="**/*.java"/>
