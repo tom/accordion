@@ -17,10 +17,14 @@ public class WithCommandExecuter {
 
     public void execute(AccordionBuilder accordionBuilder) {
         for (Method method : test.getClass().getMethods()) {
-            if(method.isAnnotationPresent(WithCommand.class)) {
+            if (method.isAnnotationPresent(WithCommand.class)) {
                 try {
                     WithCommand withCommand = method.getAnnotation(WithCommand.class);
-                    accordionBuilder.addNameSpace(withCommand.nameSpace(), withCommand.name(), (Command) method.invoke(test));
+                    Object returnedObject = method.invoke(test);
+                    if (!(returnedObject instanceof Command)) {
+                        throw new IllegalStateException(String.format("A %s was returned a Command is the required return type of a method with @WithCommand annotation", returnedObject.getClass().getSimpleName()));
+                    }
+                    accordionBuilder.addNameSpace(withCommand.nameSpace(), withCommand.name(), (Command) returnedObject);
                 } catch (IllegalAccessException e) {
                     e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
                 } catch (InvocationTargetException e) {
