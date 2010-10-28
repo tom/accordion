@@ -1,7 +1,7 @@
 package net.tommalone.accordion;
 
 import org.concordion.api.Command;
-import org.concordion.internal.command.ThrowableCaughtListener;
+import org.concordion.api.listener.ThrowableCaughtListener;
 
 public interface AccordionBuilder {
 

@@ -26,9 +26,9 @@ public class WithCommandExecuter {
                     }
                     accordionBuilder.addNameSpace(withCommand.nameSpace(), withCommand.name(), (Command) returnedObject);
                 } catch (IllegalAccessException e) {
-                    e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+                    throw new RuntimeException(e);
                 } catch (InvocationTargetException e) {
-                    e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+                    throw new RuntimeException(e);
                 }
             }
         }

@@ -2,9 +2,11 @@ package net.tommalone.accordion;
 
 import org.concordion.api.ResultSummary;
 import org.concordion.internal.ConcordionBuilder;
+import org.concordion.internal.FixtureRunner;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.runner.Description;
+import org.junit.runner.notification.RunNotifier;
 import org.junit.runners.BlockJUnit4ClassRunner;
 import org.junit.runners.model.FrameworkMethod;
 import org.junit.runners.model.InitializationError;
@@ -15,8 +17,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AccordionRunner extends BlockJUnit4ClassRunner {
-    private final Description fixtureDescription;
+private final Description fixtureDescription;
     private final FrameworkMethod fakeMethod;
+    private ResultSummary result;
 
     /*
      * The standard JUnit runner (BlockJUnit4ClassRunner) requires at least
@@ -41,7 +44,8 @@ public class AccordionRunner extends BlockJUnit4ClassRunner {
      */
     public AccordionRunner(Class<?> fixtureClass) throws InitializationError {
         super(fixtureClass);
-        fixtureDescription = Description.createTestDescription(fixtureClass, "[Concordion Specification]");
+        String testDescription = ("[Concordion Specification for '" + fixtureClass.getSimpleName()).replaceAll("Test$", "']"); // Based on suggestion by Danny Guerrier
+        fixtureDescription = Description.createTestDescription(fixtureClass, testDescription);
         try {
             fakeMethod = new FakeFrameworkMethod();
         } catch (Exception e) {
@@ -95,12 +99,18 @@ public class AccordionRunner extends BlockJUnit4ClassRunner {
         return super.describeChild(method);
     }
 
+    @Override
+    protected void runChild(FrameworkMethod method, RunNotifier notifier) {
+        super.runChild(method, notifier);
+        if (result != null && result.getIgnoredCount() > 0) {
+            notifier.fireTestIgnored(fixtureDescription);
+        }
+    }
+
     protected Statement specExecStatement(final Object fixture) {
         return new Statement() {
             public void evaluate() throws Throwable {
-                ResultSummary resultSummary = new ConcordionAccordionBuilder().build().process(fixture);
-                resultSummary.print(System.out, fixture);
-                resultSummary.assertIsSatisfied(fixture);
+                result = new FixtureRunner().run(fixture);
             }
         };
     }
