@@ -10,13 +10,33 @@ public class ReflectiveHelper {
 
     public static Object getValue(Object o, String fieldName) {
         try {
-            Field declaredField = o.getClass().getSuperclass().getDeclaredField(fieldName);
-            declaredField.setAccessible(true);
-            return declaredField.get(o);
+            Field fieldFromClass = getFieldFromClass(o.getClass(), fieldName);
+            fieldFromClass.setAccessible(true);
+            return fieldFromClass.get(o);
         } catch (IllegalAccessException e) {
             throw new RuntimeException(e);
-        } catch (NoSuchFieldException e) {
+        }
+    }
+
+    public static void setValue(Object o, String fieldName, Object value) {
+        try {
+            Field fieldFromClass = getFieldFromClass(o.getClass(), fieldName);
+            fieldFromClass.setAccessible(true);
+            fieldFromClass.set(o, value);
+        } catch (IllegalAccessException e) {
             throw new RuntimeException(e);
+        }
+    }
+
+    private static Field getFieldFromClass(Class clazz, String fieldName) {
+        try {
+            return clazz.getDeclaredField(fieldName);
+        } catch (NoSuchFieldException e) {
+            if(clazz.getSuperclass() == null) {
+                throw new RuntimeException(e);
+            } else {
+                return getFieldFromClass(clazz.getSuperclass(), fieldName);
+            }
         }
     }
 

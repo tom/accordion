@@ -13,12 +13,13 @@ import java.io.IOException;
 
 public class FixtureRunner {
 
-    public ResultSummary run(final Object fixture) throws IOException {
+    public ResultSummary run(final Object fixture, AccordionRunner accordionRunner) throws IOException {
         AccordionBuilder accordionBuilder = new ConcordionAccordionBuilder();
         AssertResultRenderer assertRenderer = new AssertResultRenderer();
         accordionBuilder.withAssertEqualsListener(assertRenderer);
         accordionBuilder.withAssertTrueListener(assertRenderer);
         accordionBuilder.withAssertFalseListener(assertRenderer);
+        accordionRunner.withAccordionBuilder(accordionBuilder);
         new WithCommandsExecuter(fixture).execute(accordionBuilder, assertRenderer);
         if (fixture.getClass().isAnnotationPresent(FullOGNL.class)) {
             accordionBuilder.withEvaluatorFactory(new OgnlEvaluatorFactory());

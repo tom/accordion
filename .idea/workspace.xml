@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b21e37a8-1a72-469d-8c70-b116a0e831d3" name="Default" comment="Removing file">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/commands/LooseExecuteCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/ReflectiveHelper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/spec/commands/LooseExecuteCommand.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/spec/commands/LooseExecuteCommandTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/spec/commands/TestAccordionRunner.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/AccordionRunner.java" afterPath="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/AccordionRunner.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/commands/LooseExecuteCommand.java" afterPath="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/commands/LooseExecuteCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/FixtureRunner.java" afterPath="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/FixtureRunner.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/LooseOgnlEvaluator.java" afterPath="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/LooseOgnlEvaluator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/ReflectiveHelper.java" afterPath="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/ReflectiveHelper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/spec/commands/LooseExecuteCommandTest.java" afterPath="$PROJECT_DIR$/src/test/spec/commands/LooseExecuteCommandTest.java" />
     </list>
     <ignored path="accordion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,19 +36,6 @@
   <component name="DebuggerManager">
     <line_breakpoints>
       <breakpoint url="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/WithCommandsExecuter.java" line="28" class="net.tommalone.accordion.internal.WithCommandsExecuter" package="net.tommalone.accordion.internal">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/ReflectiveHelper.java" line="12" class="net.tommalone.accordion.internal.ReflectiveHelper" package="net.tommalone.accordion.internal">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -97,26 +89,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="HamcrestCommand.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/commands/HamcrestCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="37" selection-start="900" selection-end="900" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HamcrestCommandSpec.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/spec/commands/HamcrestCommandSpec.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="7" selection-start="0" selection-end="545" vertical-scroll-proportion="-7.681818">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="LooseExecuteCommand.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/spec/commands/LooseExecuteCommand.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -129,18 +101,16 @@
       <file leaf-file-name="LooseExecuteCommandTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/spec/commands/LooseExecuteCommandTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="11" selection-start="927" selection-end="927" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="6" column="0" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HamcrestCommandSpecTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/spec/commands/HamcrestCommandSpecTest.java">
+      <file leaf-file-name="TestAccordionRunner.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/spec/commands/TestAccordionRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="4" selection-start="393" selection-end="463" vertical-scroll-proportion="0.0">
+            <state line="17" column="96" selection-start="669" selection-end="669" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -151,7 +121,7 @@
       <file leaf-file-name="LooseExecuteCommand.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/commands/LooseExecuteCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="72" selection-start="759" selection-end="759" vertical-scroll-proportion="0.0">
+            <state line="19" column="0" selection-start="771" selection-end="771" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -159,11 +129,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Evaluator.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/lib/jars/concordion-1.4.1.jar!/org/concordion/api/Evaluator.class">
+      <file leaf-file-name="LooseOgnlEvaluator.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/LooseOgnlEvaluator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="29" selection-start="214" selection-end="214" vertical-scroll-proportion="-3.12">
-              <folding />
+            <state line="29" column="84" selection-start="1109" selection-end="1109" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -177,20 +149,42 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReflectiveHelper.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ReflectiveHelper.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/ReflectiveHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="12" selection-start="279" selection-end="279" vertical-scroll-proportion="0.27857143">
+            <state line="26" column="42" selection-start="887" selection-end="887" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SimpleEvaluator.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/lib/jars/concordion-1.4.1.jar!/org/concordion/internal/SimpleEvaluator.class">
+      <file leaf-file-name="build.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="20" selection-start="168" selection-end="168" vertical-scroll-proportion="-2.08">
+            <state line="49" column="45" selection-start="2056" selection-end="2056" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AccordionRunner.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/AccordionRunner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="87" column="47" selection-start="3240" selection-end="3240" vertical-scroll-proportion="0.43928573">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FixtureRunner.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/FixtureRunner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="61" selection-start="1017" selection-end="1017" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -229,12 +223,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/AccordionBuilder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/ConcordionAccordionBuilder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/commands/WithAssertListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/FixtureRunner.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/WithCommandsExecuter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/AccordionAddACommand.java" />
         <option value="$PROJECT_DIR$/src/test/unit/java/net/tommalone/accordion/internal/WithCommandsExecuterTest.java" />
         <option value="$PROJECT_DIR$/src/test/unit/java/net/tommalone/accordion/internal/AccordionAddACommandTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/commands/BaseWithAssertListenerCommand.java" />
@@ -242,9 +230,15 @@
         <option value="$PROJECT_DIR$/src/test/spec/commands/HamcrestCommandSpec.html" />
         <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/commands/LooseCommand.java" />
         <option value="$PROJECT_DIR$/src/test/spec/commands/LooseExecuteCommand.html" />
-        <option value="$PROJECT_DIR$/src/test/spec/commands/LooseExecuteCommandTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/OgnlEvaluator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/LooseOgnlEvaluator.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/commands/LooseExecuteCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/ReflectiveHelper.java" />
+        <option value="$PROJECT_DIR$/build.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/FixtureRunner.java" />
+        <option value="$PROJECT_DIR$/src/test/spec/commands/TestAccordionRunner.java" />
+        <option value="$PROJECT_DIR$/src/test/spec/commands/LooseExecuteCommandTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/AccordionRunner.java" />
       </list>
     </option>
   </component>
@@ -926,41 +920,6 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/WithCommandsExecuter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="71" selection-start="878" selection-end="878" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/AccordionAddACommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="78" selection-start="1038" selection-end="1038" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/jars/concordion-1.4.1.jar!/org/concordion/internal/listener/AssertResultRenderer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="20" selection-start="177" selection-end="177" vertical-scroll-proportion="-2.08">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/unit/java/net/tommalone/accordion/internal/AccordionAddACommandTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="79" selection-start="751" selection-end="751" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/unit/java/net/tommalone/accordion/internal/WithCommandsExecuterTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="79" selection-start="2430" selection-end="2430" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/commands/BaseWithAssertListenerCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="14" selection-start="923" selection-end="923" vertical-scroll-proportion="0.0">
@@ -1002,22 +961,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/spec/commands/LooseExecuteCommand.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="31" selection-start="364" selection-end="364" vertical-scroll-proportion="-5.318182">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/spec/commands/LooseExecuteCommandTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="11" selection-start="927" selection-end="927" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/jars/concordion-1.4.1.jar!/org/concordion/api/Evaluator.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="29" selection-start="214" selection-end="214" vertical-scroll-proportion="-3.12">
@@ -1032,9 +975,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/spec/commands/LooseExecuteCommand.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="31" selection-start="364" selection-end="364" vertical-scroll-proportion="-5.318182">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/LooseOgnlEvaluator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="84" selection-start="1109" selection-end="1109" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/commands/LooseExecuteCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="72" selection-start="759" selection-end="759" vertical-scroll-proportion="0.0">
+        <state line="19" column="0" selection-start="771" selection-end="771" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1043,8 +1002,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/ReflectiveHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="12" selection-start="279" selection-end="279" vertical-scroll-proportion="0.27857143">
+        <state line="26" column="42" selection-start="887" selection-end="887" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="45" selection-start="2056" selection-end="2056" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/FixtureRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="61" selection-start="1017" selection-end="1017" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/spec/commands/TestAccordionRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="96" selection-start="669" selection-end="669" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/spec/commands/LooseExecuteCommandTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/AccordionRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="47" selection-start="3240" selection-end="3240" vertical-scroll-proportion="0.43928573">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

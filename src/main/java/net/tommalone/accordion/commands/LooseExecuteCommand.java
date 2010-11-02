@@ -1,5 +1,6 @@
 package net.tommalone.accordion.commands;
 
+import net.tommalone.accordion.internal.LooseOgnlEvaluator;
 import net.tommalone.accordion.internal.ReflectiveHelper;
 import org.concordion.api.AbstractCommand;
 import org.concordion.api.CommandCall;
@@ -13,7 +14,6 @@ public class LooseExecuteCommand extends AbstractCommand {
 
     @Override
     public void execute(CommandCall commandCall, Evaluator evaluator, ResultRecorder resultRecorder) {
-        Object rootObject = ReflectiveHelper.getValue(evaluator, "rootObject");
-        executeCommand.execute(commandCall, new OgnlEvaluator(rootObject), resultRecorder);
+        executeCommand.execute(commandCall, new LooseOgnlEvaluator(evaluator), resultRecorder);
     }
 }

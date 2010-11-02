@@ -85,9 +85,14 @@ public class AccordionRunner extends BlockJUnit4ClassRunner {
 
     protected Statement methodInvoker(FrameworkMethod method, Object test) {
         if (method == fakeMethod) {
-            return specExecStatement(test);
+            return specExecStatement(test, this);
         }
         return super.methodInvoker(method, test);
+    }
+
+
+    public void withAccordionBuilder(AccordionBuilder accordionBuilder) {
+
     }
 
     @Override
@@ -106,10 +111,10 @@ public class AccordionRunner extends BlockJUnit4ClassRunner {
         }
     }
 
-    protected Statement specExecStatement(final Object fixture) {
+    protected Statement specExecStatement(final Object fixture, final AccordionRunner accordionRunner) {
         return new Statement() {
             public void evaluate() throws Throwable {
-                result = new FixtureRunner().run(fixture);
+                result = new FixtureRunner().run(fixture, accordionRunner);
             }
         };
     }
