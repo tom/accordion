@@ -4,6 +4,7 @@ import net.tommalone.accordion.AccordionBuilder;
 import net.tommalone.accordion.AddACommand;
 import net.tommalone.accordion.WithCommands;
 import org.concordion.internal.command.SetCommand;
+import org.concordion.internal.listener.AssertResultRenderer;
 import org.jmock.Expectations;
 import org.jmock.Mockery;
 import org.jmock.integration.junit4.JMock;
@@ -27,13 +28,14 @@ public class WithCommandsExecuterTest {
         WithCommandsExecuter withCommandsExecuter = new WithCommandsExecuter(new ValidTest());
 
         final AccordionBuilder accordionBuilder = context.mock(AccordionBuilder.class);
+        final AssertResultRenderer assertRenderer = new AssertResultRenderer();
 
         context.checking(new Expectations() {{
             one(accordionBuilder).addNameSpace(with(equal("http://www.tom.com")), with(equal("foo")), with(same(A_COMMAND)));
             one(accordionBuilder).addNameSpace(with(equal("http://www.tom.com")), with(equal("bar")), with(same(A_COMMAND)));
         }});
 
-        withCommandsExecuter.execute(accordionBuilder);
+        withCommandsExecuter.execute(accordionBuilder, assertRenderer);
     }
 
     @Test
@@ -41,12 +43,13 @@ public class WithCommandsExecuterTest {
         WithCommandsExecuter withCommandsExecuter = new WithCommandsExecuter(new ValidWIthNoAnnotations());
 
         final AccordionBuilder accordionBuilder = context.mock(AccordionBuilder.class);
+        final AssertResultRenderer assertRenderer = new AssertResultRenderer();
 
         context.checking(new Expectations() {{
             never(accordionBuilder);
         }});
 
-        withCommandsExecuter.execute(accordionBuilder);
+        withCommandsExecuter.execute(accordionBuilder, assertRenderer);
     }
 
     @Test
@@ -54,13 +57,14 @@ public class WithCommandsExecuterTest {
         WithCommandsExecuter withCommandsExecuter = new WithCommandsExecuter(new InValidAsNoInputParameter());
 
         final AccordionBuilder accordionBuilder = context.mock(AccordionBuilder.class);
+        final AssertResultRenderer assertRenderer = new AssertResultRenderer();
 
         context.checking(new Expectations() {{
             never(accordionBuilder);
         }});
 
         try {
-            withCommandsExecuter.execute(accordionBuilder);
+            withCommandsExecuter.execute(accordionBuilder, assertRenderer);
             fail("No Add A Command Was added so should throw exception");
         } catch (IllegalArgumentException e) {
             assertThat(e.getMessage(), is(equalTo("You have not provided a method called aCommand that takes a AccordionAddACommand, now go away and add one")));

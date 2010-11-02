@@ -1,8 +1,7 @@
 package net.tommalone.accordion;
 
+import net.tommalone.accordion.internal.FixtureRunner;
 import org.concordion.api.ResultSummary;
-import org.concordion.internal.ConcordionBuilder;
-import org.concordion.internal.FixtureRunner;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.runner.Description;
@@ -17,7 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AccordionRunner extends BlockJUnit4ClassRunner {
-private final Description fixtureDescription;
+    private final Description fixtureDescription;
     private final FrameworkMethod fakeMethod;
     private ResultSummary result;
 

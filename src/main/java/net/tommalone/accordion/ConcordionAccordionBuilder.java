@@ -3,6 +3,8 @@ package net.tommalone.accordion;
 import org.concordion.api.Command;
 import org.concordion.api.listener.ThrowableCaughtListener;
 import org.concordion.internal.ConcordionBuilder;
+import org.concordion.internal.OgnlEvaluatorFactory;
+import org.concordion.internal.listener.AssertResultRenderer;
 
 public class ConcordionAccordionBuilder implements AccordionBuilder {
 
@@ -23,6 +25,26 @@ public class ConcordionAccordionBuilder implements AccordionBuilder {
     @Override
     public Accordion build() {
         return new ConcordionAccordion(concordionBuilder.build());
+    }
+
+    @Override
+    public void withEvaluatorFactory(OgnlEvaluatorFactory ognlEvaluatorFactory) {
+        concordionBuilder.withEvaluatorFactory(ognlEvaluatorFactory);
+    }
+
+    @Override
+    public void withAssertEqualsListener(AssertResultRenderer assertRenderer) {
+        concordionBuilder.withAssertEqualsListener(assertRenderer);
+    }
+
+    @Override
+    public void withAssertTrueListener(AssertResultRenderer assertRenderer) {
+        concordionBuilder.withAssertTrueListener(assertRenderer);
+    }
+
+    @Override
+    public void withAssertFalseListener(AssertResultRenderer assertRenderer) {
+        concordionBuilder.withAssertFalseListener(assertRenderer);
     }
 
 

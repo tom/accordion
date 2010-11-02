@@ -2,8 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b21e37a8-1a72-469d-8c70-b116a0e831d3" name="Default" comment="Removing file">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/commands/BaseWithAssertListenerCommand.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/commands/HamcrestCommand.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/commands/WithAssertListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/FixtureRunner.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/spec/commands/HamcrestCommandSpec.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/spec/commands/HamcrestCommandSpecTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/accordion.iml" afterPath="$PROJECT_DIR$/accordion.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/AccordionBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/AccordionBuilder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/AccordionRunner.java" afterPath="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/AccordionRunner.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/ConcordionAccordionBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/ConcordionAccordionBuilder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/AccordionAddACommand.java" afterPath="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/AccordionAddACommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/WithCommandsExecuter.java" afterPath="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/WithCommandsExecuter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/unit/java/net/tommalone/accordion/internal/AccordionAddACommandTest.java" afterPath="$PROJECT_DIR$/src/test/unit/java/net/tommalone/accordion/internal/AccordionAddACommandTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/unit/java/net/tommalone/accordion/internal/WithCommandsExecuterTest.java" afterPath="$PROJECT_DIR$/src/test/unit/java/net/tommalone/accordion/internal/WithCommandsExecuterTest.java" />
     </list>
     <ignored path="accordion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,7 +40,7 @@
   </component>
   <component name="DebuggerManager">
     <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/WithCommandsExecuter.java" line="27" class="net.tommalone.accordion.internal.WithCommandsExecuter" package="net.tommalone.accordion.internal">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/WithCommandsExecuter.java" line="28" class="net.tommalone.accordion.internal.WithCommandsExecuter" package="net.tommalone.accordion.internal">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -81,7 +93,104 @@
     <favorites_list name="accordion" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="HamcrestCommand.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/commands/HamcrestCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="37" selection-start="900" selection-end="900" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HamcrestCommandSpec.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/spec/commands/HamcrestCommandSpec.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="7" selection-start="545" selection-end="545" vertical-scroll-proportion="0.20239522">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseWithAssertListenerCommand.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/commands/BaseWithAssertListenerCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="14" selection-start="923" selection-end="923" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WithAssertListener.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/commands/WithAssertListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="4" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FixtureRunner.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/FixtureRunner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="46" selection-start="969" selection-end="969" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WithCommandsExecuter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/WithCommandsExecuter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="71" selection-start="878" selection-end="878" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AccordionAddACommand.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/AccordionAddACommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="78" selection-start="1038" selection-end="1038" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WithCommandsExecuterTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/unit/java/net/tommalone/accordion/internal/WithCommandsExecuterTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="59" column="79" selection-start="2430" selection-end="2430" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AccordionAddACommandTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/unit/java/net/tommalone/accordion/internal/AccordionAddACommandTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="79" selection-start="751" selection-end="751" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AssertResultRenderer.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/lib/jars/concordion-1.4.1.jar!/org/concordion/internal/listener/AssertResultRenderer.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="20" selection-start="177" selection-end="177" vertical-scroll-proportion="-2.08">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -115,22 +224,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/Accordion.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/WithCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/ConcordionAccordion.java" />
-        <option value="$PROJECT_DIR$/src/test/unit/java/net/tommalone/accordion/internal/WithCommandBuilderTest.java" />
-        <option value="$PROJECT_DIR$/build.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/ConcordionAccordionBuilder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/AccordionRunner.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/WithCommands.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/AccordionBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/AddACommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/WithCommandExecuter.java" />
         <option value="$PROJECT_DIR$/src/test/unit/java/net/tommalone/accordion/internal/WithCommandExecuterTest.java" />
-        <option value="$PROJECT_DIR$/src/test/unit/java/net/tommalone/accordion/internal/AccordionAddACommandTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/AccordionAddACommand.java" />
+        <option value="$PROJECT_DIR$/src/test/spec/commands/HamcrestCommandSpecTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/AccordionRunner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/AccordionBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/ConcordionAccordionBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/commands/WithAssertListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/FixtureRunner.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/WithCommandsExecuter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/AccordionAddACommand.java" />
         <option value="$PROJECT_DIR$/src/test/unit/java/net/tommalone/accordion/internal/WithCommandsExecuterTest.java" />
+        <option value="$PROJECT_DIR$/src/test/unit/java/net/tommalone/accordion/internal/AccordionAddACommandTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/commands/BaseWithAssertListenerCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/commands/HamcrestCommand.java" />
+        <option value="$PROJECT_DIR$/src/test/spec/commands/HamcrestCommandSpec.html" />
       </list>
     </option>
   </component>
@@ -170,6 +279,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -205,16 +316,26 @@
               <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="unit" />
+              <option name="myItemId" value="accordion" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="accordion" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="internal" />
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spec" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -233,6 +354,14 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="commands" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -257,12 +386,74 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="accordion" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="accordion" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="accordion" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="accordion" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="internal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="accordion" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="accordion" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="accordion" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="commands" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Favorites" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -283,9 +474,9 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -298,7 +489,7 @@
       <recent name="net.tommalone.accordion.internal.WithCommandBuilderTest" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.WithCommandsExecuterTest">
+  <component name="RunManager" selected="JUnit.HamcrestCommandSpecTest">
     <configuration default="false" name="WithCommandsExecuterTest" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false">
         <pattern>
@@ -378,6 +569,35 @@
       <option name="MAIN_CLASS_NAME" value="net.tommalone.accordion.internal.AccordionAddACommandTest" />
       <option name="METHOD_NAME" value="callDownToCommandWithName" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="HamcrestCommandSpecTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false">
+        <pattern>
+          <option name="PATTERN" value="commands.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="snapshooter" />
+      <module name="accordion" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="commands" />
+      <option name="MAIN_CLASS_NAME" value="commands.HamcrestCommandSpecTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -538,10 +758,11 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.WithCommandExecuterTest" />
+    <list size="4">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.WithCommandsExecuterTest" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.AccordionAddACommandTest" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.AccordionAddACommandTest.callDownToCommandWithName" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.HamcrestCommandSpecTest" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -595,11 +816,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1597" height="1028" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289183" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24935567" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39955848" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -610,11 +830,12 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24983902" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296845" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39987123" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24870801" sideWeight="0.67108166" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24870801" sideWeight="0.67108166" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32781458" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289183" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -664,87 +885,122 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
+    <entry file="jar://$PROJECT_DIR$/lib/jars/concordion-1.4.1.jar!/org/concordion/internal/FixtureRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="11" selection-start="201" selection-end="201" vertical-scroll-proportion="0.09154929">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/jars/junit-4.8.2.jar!/org/hamcrest/SelfDescribing.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="9" selection-start="193" selection-end="193" vertical-scroll-proportion="0.09375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/AccordionRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="45" selection-start="3050" selection-end="3050" vertical-scroll-proportion="1.0163361" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/ConcordionAccordionBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="60" selection-start="623" selection-end="623" vertical-scroll-proportion="0.2578763" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/Accordion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="19" selection-start="160" selection-end="160" vertical-scroll-proportion="0.10376283" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/ConcordionAccordion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="140" selection-end="140" vertical-scroll-proportion="0.10376283" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="522" selection-end="522" vertical-scroll-proportion="0.14025086" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/WithCommands.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="18" selection-start="311" selection-end="311" vertical-scroll-proportion="0.10376283">
-          <folding />
+        <state line="17" column="13" selection-start="563" selection-end="563" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/AccordionBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="356" selection-end="356" vertical-scroll-proportion="0.0">
+        <state line="7" column="20" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/AddACommand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/ConcordionAccordionBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="53" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0">
+        <state line="46" column="66" selection-start="1671" selection-end="1671" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/jars/concordion-1.4.1.jar!/org/concordion/api/Command.class">
+    <entry file="jar://$PROJECT_DIR$/lib/jars/concordion-1.4.1.jar!/org/concordion/api/listener/AssertEqualsListener.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="24" selection-start="167" selection-end="167" vertical-scroll-proportion="0.061032865">
+        <state line="5" column="95" selection-start="233" selection-end="247" vertical-scroll-proportion="-2.08">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/commands/WithAssertListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="4" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/FixtureRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="46" selection-start="969" selection-end="969" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/WithCommandsExecuter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="88" selection-start="1188" selection-end="1188" vertical-scroll-proportion="0.0">
+        <state line="23" column="71" selection-start="878" selection-end="878" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/AccordionAddACommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="78" selection-start="1038" selection-end="1038" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/jars/concordion-1.4.1.jar!/org/concordion/internal/listener/AssertResultRenderer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="20" selection-start="177" selection-end="177" vertical-scroll-proportion="-2.08">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/unit/java/net/tommalone/accordion/internal/AccordionAddACommandTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="610" selection-end="610" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/AccordionAddACommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="64" selection-start="648" selection-end="648" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="21" column="79" selection-start="751" selection-end="751" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/unit/java/net/tommalone/accordion/internal/WithCommandsExecuterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="46" selection-start="2144" selection-end="2144" vertical-scroll-proportion="0.65222347">
+        <state line="59" column="79" selection-start="2430" selection-end="2430" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/commands/BaseWithAssertListenerCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="14" selection-start="923" selection-end="923" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/commands/HamcrestCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="37" selection-start="900" selection-end="900" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/spec/commands/HamcrestCommandSpec.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="7" selection-start="545" selection-end="545" vertical-scroll-proportion="0.20239522">
           <folding />
         </state>
       </provider>

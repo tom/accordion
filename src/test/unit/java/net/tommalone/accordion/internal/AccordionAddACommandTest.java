@@ -2,6 +2,7 @@ package net.tommalone.accordion.internal;
 
 import net.tommalone.accordion.AccordionBuilder;
 import org.concordion.api.Command;
+import org.concordion.internal.listener.AssertResultRenderer;
 import org.jmock.Expectations;
 import org.jmock.Mockery;
 import org.jmock.integration.junit4.JMock;
@@ -18,12 +19,13 @@ public class AccordionAddACommandTest {
 
         final AccordionBuilder accordionBuilder = context.mock(AccordionBuilder.class);
         final Command aCommand = context.mock(Command.class);
+        final AssertResultRenderer assertRenderer = new AssertResultRenderer();
 
         context.checking(new Expectations(){{
             atLeast(1).of(accordionBuilder).addNameSpace("http://namespace.com", "foo", aCommand);
         }});
 
-        new AccordionAddACommand("http://namespace.com", accordionBuilder).addCommand("foo", aCommand);
+        new AccordionAddACommand("http://namespace.com", accordionBuilder, assertRenderer).addCommand("foo", aCommand);
 
     }
 

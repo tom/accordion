@@ -3,6 +3,7 @@ package net.tommalone.accordion.internal;
 import net.tommalone.accordion.AccordionBuilder;
 import net.tommalone.accordion.WithCommands;
 import org.concordion.api.Command;
+import org.concordion.internal.listener.AssertResultRenderer;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -14,13 +15,13 @@ public class WithCommandsExecuter {
         this.test = test;
     }
 
-    public void execute(AccordionBuilder accordionBuilder) {
+    public void execute(AccordionBuilder accordionBuilder, AssertResultRenderer assertRenderer) {
         for (Method method : test.getClass().getMethods()) {
             if (method.isAnnotationPresent(WithCommands.class)) {
                 try {
                     WithCommands withCommands = method.getAnnotation(WithCommands.class);
 
-                    method.invoke(test, new Object[]{new AccordionAddACommand(withCommands.nameSpace(), accordionBuilder)});
+                    method.invoke(test, new Object[]{new AccordionAddACommand(withCommands.nameSpace(), accordionBuilder, assertRenderer)});
 
                 } catch (IllegalAccessException e) {
                     throw new RuntimeException(e);
