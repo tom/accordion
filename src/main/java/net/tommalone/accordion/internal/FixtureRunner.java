@@ -14,8 +14,8 @@ import java.io.IOException;
 public class FixtureRunner {
 
     public ResultSummary run(final Object fixture, AccordionRunner accordionRunner) throws IOException {
-        AccordionBuilder accordionBuilder = new ConcordionAccordionBuilder();
         AssertResultRenderer assertRenderer = new AssertResultRenderer();
+        AccordionBuilder accordionBuilder = new ConcordionAccordionBuilder(assertRenderer);
         accordionBuilder.withAssertEqualsListener(assertRenderer);
         accordionBuilder.withAssertTrueListener(assertRenderer);
         accordionBuilder.withAssertFalseListener(assertRenderer);

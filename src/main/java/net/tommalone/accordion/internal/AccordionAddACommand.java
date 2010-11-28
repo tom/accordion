@@ -22,10 +22,6 @@ public class AccordionAddACommand implements AddACommand {
     @Override
     public AddACommand addCommand(String name, Command command) {
         accordionBuilder.addNameSpace(nameSpace, name, command);
-        if(command instanceof WithAssertListener) {
-            WithAssertListener withAssertListener = (WithAssertListener) command;
-            withAssertListener.addAssertListener(assertRenderer);
-        }
         return this;
     }
 }
