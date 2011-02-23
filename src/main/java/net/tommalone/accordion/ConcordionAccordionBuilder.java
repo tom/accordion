@@ -1,19 +1,23 @@
 package net.tommalone.accordion;
 
 import net.tommalone.accordion.commands.WithAssertListener;
+import net.tommalone.accordion.commands.WithVerifyRowsListener;
 import org.concordion.api.Command;
 import org.concordion.api.listener.ThrowableCaughtListener;
 import org.concordion.internal.ConcordionBuilder;
 import org.concordion.internal.OgnlEvaluatorFactory;
 import org.concordion.internal.listener.AssertResultRenderer;
+import org.concordion.internal.listener.VerifyRowsResultRenderer;
 
 public class ConcordionAccordionBuilder implements AccordionBuilder {
 
     private ConcordionBuilder concordionBuilder = new ConcordionBuilder();
     private final AssertResultRenderer assertRenderer;
+    private final VerifyRowsResultRenderer verifyRowsResultRenderer;
 
-    public ConcordionAccordionBuilder(AssertResultRenderer assertRenderer) {
+    public ConcordionAccordionBuilder(AssertResultRenderer assertRenderer, VerifyRowsResultRenderer verifyRowsResultRenderer) {
         this.assertRenderer = assertRenderer;
+        this.verifyRowsResultRenderer = verifyRowsResultRenderer;
     }
 
     @Override
@@ -23,6 +27,11 @@ public class ConcordionAccordionBuilder implements AccordionBuilder {
             WithAssertListener withAssertListener = (WithAssertListener) command;
             withAssertListener.addAssertListener(assertRenderer);
         }
+        if (command instanceof WithVerifyRowsListener) {
+            WithVerifyRowsListener withVerifyRowsListener = (WithVerifyRowsListener) command;
+            withVerifyRowsListener.addVerifyRowsListener(verifyRowsResultRenderer);
+        }
+
         return this;
     }
 
@@ -55,6 +64,11 @@ public class ConcordionAccordionBuilder implements AccordionBuilder {
     @Override
     public void withAssertFalseListener(AssertResultRenderer assertRenderer) {
         concordionBuilder.withAssertFalseListener(assertRenderer);
+    }
+
+    @Override
+    public void withVerifyRowsListener(VerifyRowsResultRenderer assertRenderer) {
+        concordionBuilder.withVerifyRowsListener(assertRenderer);
     }
 
 

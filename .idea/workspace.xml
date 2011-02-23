@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b21e37a8-1a72-469d-8c70-b116a0e831d3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/spec/commands/LooseAssertEqualsCommandTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/AccordionBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/AccordionBuilder.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/ConcordionAccordionBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/ConcordionAccordionBuilder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/AccordionAddACommand.java" afterPath="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/AccordionAddACommand.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/FixtureRunner.java" afterPath="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/FixtureRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/spec/commands/LooseExecuteCommand.html" afterPath="$PROJECT_DIR$/src/test/spec/commands/LooseExecuteCommand.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/spec/commands/TestAccordionRunner.java" afterPath="$PROJECT_DIR$/src/test/spec/commands/TestAccordionRunner.java" />
     </list>
     <ignored path="accordion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,6 +22,7 @@
     <rightPanel />
     <splitter proportion="0.5" />
   </component>
+  <component name="CoverageDataManager" choice="3" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
     <option name="REVERSE_PATCH" value="false" />
@@ -73,7 +71,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/ConcordionAccordionBuilder.java" line="20" class="net.tommalone.accordion.ConcordionAccordionBuilder" package="net.tommalone.accordion">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/ConcordionAccordionBuilder.java" line="24" class="net.tommalone.accordion.ConcordionAccordionBuilder" package="net.tommalone.accordion">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -127,46 +125,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AccordionRunner.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/AccordionRunner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="116" column="46" selection-start="4116" selection-end="4116" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FixtureRunner.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/FixtureRunner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="91" selection-start="771" selection-end="771" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WithCommandsExecuter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/WithCommandsExecuter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="72" selection-start="879" selection-end="879" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AccordionAddACommand.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/AccordionAddACommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="27" selection-start="870" selection-end="870" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ConcordionAccordionBuilder.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/ConcordionAccordionBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="1092" selection-end="1092" vertical-scroll-proportion="0.0">
+            <state line="31" column="81" selection-start="1640" selection-end="1640" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="49" column="45" selection-start="2056" selection-end="2056" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FixtureRunner.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/FixtureRunner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="117" selection-start="955" selection-end="955" vertical-scroll-proportion="0.1492891">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WithAssertListener.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/commands/WithAssertListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="19" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -175,25 +164,34 @@
       <file leaf-file-name="AccordionBuilder.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/AccordionBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="21" selection-start="303" selection-end="303" vertical-scroll-proportion="0.0">
+            <state line="8" column="27" selection-start="338" selection-end="338" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LooseAssertEqualsCommand.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/commands/LooseAssertEqualsCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="13" selection-start="843" selection-end="843" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HamcrestCommandSpecTest.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="HamcrestCommandSpecTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/spec/commands/HamcrestCommandSpecTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="0" selection-start="869" selection-end="869" vertical-scroll-proportion="0.5116279">
+            <state line="28" column="0" selection-start="869" selection-end="869" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WithVerifyRowsListener.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/commands/WithVerifyRowsListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="20" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseWithVerifyRowsListenerCommand.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/commands/BaseWithVerifyRowsListenerCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="13" selection-start="402" selection-end="402" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -250,11 +248,9 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/OgnlEvaluator.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/LooseOgnlEvaluator.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/commands/LooseExecuteCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/ReflectiveHelper.java" />
-        <option value="$PROJECT_DIR$/build.xml" />
         <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/AccordionRunner.java" />
         <option value="$PROJECT_DIR$/src/test/spec/commands/LooseExecuteCommandTest.java" />
         <option value="$PROJECT_DIR$/src/test/spec/commands/LooseAssertEqualsTest.java" />
@@ -263,9 +259,11 @@
         <option value="$PROJECT_DIR$/src/test/spec/commands/LooseExecuteCommand.html" />
         <option value="$PROJECT_DIR$/src/test/spec/commands/LooseAssertEqualsCommand.html" />
         <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/AccordionAddACommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/ConcordionAccordionBuilder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/FixtureRunner.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/commands/LooseAssertEqualsCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/AccordionBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/ConcordionAccordionBuilder.java" />
+        <option value="$PROJECT_DIR$/build.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/FixtureRunner.java" />
       </list>
     </option>
   </component>
@@ -279,7 +277,7 @@
     <option name="LAST_EDITED_MODULE_NAME" />
     <option name="LAST_EDITED_TAB_NAME" />
   </component>
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -500,9 +498,9 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -677,8 +675,8 @@
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
-        <option name="FtpUpload" enabled="false" />
         <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="SBT.BeforeRunTask" enabled="false" />
         <option name="ValidateXdebugSetup" enabled="true" />
       </method>
     </configuration>
@@ -687,6 +685,7 @@
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
         <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="SBT.BeforeRunTask" enabled="false" />
         <option name="ValidateXdebugSetup" enabled="true" />
       </method>
     </configuration>
@@ -700,6 +699,7 @@
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
         <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="SBT.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
     <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" adl_options="" air_descriptor_path="" air_program_params="" air_publisher_id="" air_root_dir_path="" air_run_mode="AppDescriptor" browser_family="FIREFOX" class_name="" debugger_sdk="Module SDK" html_or_swf_file_path="" launcher_type="OSDefault" main_class_name="" method_name="" module_name="" output_log_level="" package_name="" player_path="/Applications/Flash Player.app/Contents/MacOS/Flash Player" port="0" run_mode="HtmlOrSwfFile" run_trusted="false" scope="Class" socket_policy_port="0" url_to_launch="http://">
@@ -708,24 +708,7 @@
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="SBT.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -759,6 +742,26 @@
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="SBT.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="SBT.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -779,6 +782,20 @@
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="SBT.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="FtpUpload" enabled="false">
+          <server_id />
+          <server_name />
+        </option>
+        <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="SBT.BeforeRunTask" enabled="false" />
+        <option name="ValidateXdebugSetup" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -805,15 +822,7 @@
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="FtpUpload" enabled="false" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-        <option name="ValidateXdebugSetup" enabled="true" />
+        <option name="SBT.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
     <list size="5">
@@ -821,7 +830,7 @@
       <item index="1" class="java.lang.String" itemvalue="JUnit.AccordionAddACommandTest.callDownToCommandWithName" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.HamcrestCommandSpecTest" />
       <item index="3" class="java.lang.String" itemvalue="JUnit.LooseExecuteCommandTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.LooseAssertEqualsTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.LooseAssertEqualsCommandTest" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -833,7 +842,6 @@
     <option name="USER" value="" />
     <option name="PASSWORD" value="" />
     <option name="LAST_MERGED_REVISION" />
-    <option name="UPDATE_RUN_STATUS" value="false" />
     <option name="MERGE_DRY_RUN" value="false" />
     <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
     <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
@@ -842,6 +850,7 @@
     <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
     <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
     <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
     <configuration useDefault="true">$USER_HOME$/.subversion_IDEA</configuration>
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
   </component>
@@ -874,15 +883,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1597" height="1028" extended-state="6" />
+    <frame x="0" y="22" width="2477" height="1418" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3289183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32819724" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24935567" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39955848" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296845" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32781458" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32742682" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289183" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24983902" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296845" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -892,9 +905,6 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32781458" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289183" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296845" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -912,6 +922,7 @@
     <option name="ENABLE_BACKGROUND_PROCESSES" value="false" />
     <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
     <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="LAST_COMMIT_MESSAGE" value="Adding Loose Assert Equals&#10;" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
@@ -945,114 +956,98 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/commands/LooseExecuteCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/spec/commands/LooseExecuteCommand.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="29" selection-start="143" selection-end="143" vertical-scroll-proportion="-1.7727273">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/spec/commands/LooseAssertEqualsCommand.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="36" selection-start="369" selection-end="386" vertical-scroll-proportion="-5.318182">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/spec/commands/LooseAssertEqualsCommandTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="17" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/spec/commands/TestAccordionRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="639" selection-end="639" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="18" column="0" selection-start="639" selection-end="639" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/lib/jars/concordion-1.4.1.jar!/org/concordion/api/AbstractCommand.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="16" selection-start="300" selection-end="300" vertical-scroll-proportion="-4.16">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/commands/HamcrestCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="75" selection-start="230" selection-end="259" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="9" column="16" selection-start="300" selection-end="300" vertical-scroll-proportion="-4.16" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/AccordionRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="46" selection-start="4116" selection-end="4116" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="116" column="46" selection-start="4116" selection-end="4116" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/WithCommandsExecuter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="72" selection-start="879" selection-end="879" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="23" column="72" selection-start="879" selection-end="879" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/AccordionAddACommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="27" selection-start="870" selection-end="870" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/FixtureRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="91" selection-start="771" selection-end="771" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/AccordionBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="21" selection-start="303" selection-end="303" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/ConcordionAccordionBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="1092" selection-end="1092" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/commands/BaseWithAssertListenerCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="95" selection-start="408" selection-end="426" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="23" column="27" selection-start="870" selection-end="870" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/commands/LooseAssertEqualsCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="13" selection-start="843" selection-end="843" vertical-scroll-proportion="0.0">
+        <state line="19" column="13" selection-start="843" selection-end="843" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/commands/BaseWithAssertListenerCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="95" selection-start="408" selection-end="426" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/commands/HamcrestCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="75" selection-start="230" selection-end="259" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/commands/BaseWithVerifyRowsListenerCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="13" selection-start="402" selection-end="402" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/commands/WithVerifyRowsListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="20" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/spec/commands/HamcrestCommandSpecTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="869" selection-end="869" vertical-scroll-proportion="0.5116279">
+        <state line="28" column="0" selection-start="869" selection-end="869" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/AccordionBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="27" selection-start="338" selection-end="338" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/commands/WithAssertListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="19" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/ConcordionAccordionBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="81" selection-start="1640" selection-end="1640" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="45" selection-start="2056" selection-end="2056" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/FixtureRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="117" selection-start="955" selection-end="955" vertical-scroll-proportion="0.1492891">
           <folding />
         </state>
       </provider>

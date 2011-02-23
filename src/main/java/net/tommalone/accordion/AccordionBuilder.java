@@ -4,6 +4,7 @@ import org.concordion.api.Command;
 import org.concordion.api.listener.ThrowableCaughtListener;
 import org.concordion.internal.OgnlEvaluatorFactory;
 import org.concordion.internal.listener.AssertResultRenderer;
+import org.concordion.internal.listener.VerifyRowsResultRenderer;
 
 public interface AccordionBuilder {
 
@@ -20,4 +21,6 @@ public interface AccordionBuilder {
     void withAssertTrueListener(AssertResultRenderer assertRenderer);
 
     void withAssertFalseListener(AssertResultRenderer assertRenderer);
+    
+    void withVerifyRowsListener(VerifyRowsResultRenderer assertRenderer);
 }

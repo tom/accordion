@@ -8,6 +8,7 @@ import org.concordion.api.ResultSummary;
 import org.concordion.internal.ConcordionBuilder;
 import org.concordion.internal.OgnlEvaluatorFactory;
 import org.concordion.internal.listener.AssertResultRenderer;
+import org.concordion.internal.listener.VerifyRowsResultRenderer;
 
 import java.io.IOException;
 
@@ -15,10 +16,12 @@ public class FixtureRunner {
 
     public ResultSummary run(final Object fixture, AccordionRunner accordionRunner) throws IOException {
         AssertResultRenderer assertRenderer = new AssertResultRenderer();
-        AccordionBuilder accordionBuilder = new ConcordionAccordionBuilder(assertRenderer);
+        VerifyRowsResultRenderer verifyRowsResultRenderer = new VerifyRowsResultRenderer();
+        AccordionBuilder accordionBuilder = new ConcordionAccordionBuilder(assertRenderer, verifyRowsResultRenderer);
         accordionBuilder.withAssertEqualsListener(assertRenderer);
         accordionBuilder.withAssertTrueListener(assertRenderer);
         accordionBuilder.withAssertFalseListener(assertRenderer);
+        accordionBuilder.withVerifyRowsListener(verifyRowsResultRenderer);
         accordionRunner.withAccordionBuilder(accordionBuilder);
         new WithCommandsExecuter(fixture).execute(accordionBuilder, assertRenderer);
         if (fixture.getClass().isAnnotationPresent(FullOGNL.class)) {
