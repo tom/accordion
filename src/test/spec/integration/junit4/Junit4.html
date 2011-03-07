@@ -1,0 +1,14 @@
+<html xmlns:cn="http://www.concordion.org/2007/concordion"
+      xmlns:tom="http://www.tommalone.net">
+    <head>
+        <title>Hamcrest Command Test</title>
+        <link rel="stylesheet" href="../concordion.css" media="screen"/>
+    </head>
+    <body>
+        <div class="example">
+            <h3>Assert Contains Test</h3>
+            <p cn:set="#subSentance">long</p>
+            <p>This sentance <b tom:assertContains="#subSentance">This is a really long sentance</b> should contain the above sentane</p>
+        </div>
+    </body>
+</html>

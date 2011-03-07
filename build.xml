@@ -47,7 +47,7 @@
     </target>
 
     <target name="jar" depends="clean, runUnitTests" description="build jar">
-        <jar destfile="target/accordion-0.0.3.jar">
+        <jar destfile="target/accordion-0.0.4.jar">
             <fileset dir="target/classes/main">
                 <include name="**/*"/>
             </fileset>

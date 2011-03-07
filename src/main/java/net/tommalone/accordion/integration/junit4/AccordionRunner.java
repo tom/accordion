@@ -1,6 +1,8 @@
-package net.tommalone.accordion;
+package net.tommalone.accordion.integration.junit4;
 
+import net.tommalone.accordion.AccordionBuilder;
 import net.tommalone.accordion.internal.FixtureRunner;
+import net.tommalone.accordion.internal.WithAccordionBuilder;
 import org.concordion.api.ResultSummary;
 import org.junit.After;
 import org.junit.Before;
@@ -15,7 +17,7 @@ import java.lang.annotation.Annotation;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AccordionRunner extends BlockJUnit4ClassRunner {
+public class AccordionRunner extends BlockJUnit4ClassRunner implements WithAccordionBuilder {
     private final Description fixtureDescription;
     private final FrameworkMethod fakeMethod;
     private ResultSummary result;
@@ -91,6 +93,7 @@ public class AccordionRunner extends BlockJUnit4ClassRunner {
     }
 
 
+    @Override
     public void withAccordionBuilder(AccordionBuilder accordionBuilder) {
 
     }

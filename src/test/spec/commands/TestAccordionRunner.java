@@ -1,7 +1,7 @@
 package commands;
 
 import net.tommalone.accordion.AccordionBuilder;
-import net.tommalone.accordion.AccordionRunner;
+import net.tommalone.accordion.integration.junit4.AccordionRunner;
 import net.tommalone.accordion.commands.LooseAssertEqualsCommand;
 import net.tommalone.accordion.commands.LooseExecuteCommand;
 import org.junit.runners.model.InitializationError;
