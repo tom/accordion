@@ -2,24 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b21e37a8-1a72-469d-8c70-b116a0e831d3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/integration/junit3/AbstractAccordionTestCase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/integration/junit4/BaseAccordionJunit4Test.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/WithAccordionBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/spec/integration/junit3/Junit3WithAnnotation.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/spec/integration/junit3/Junit3WithAnnotationTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/spec/integration/junit3/Junit3WithOutAnnotation.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/spec/integration/junit3/Junit3WithOutAnnotationTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/spec/integration/junit4/Junit4.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/spec/integration/junit4/Junit4WithDifferentRunner.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/spec/integration/junit4/Junit4WithDifferentRunnerNoAnnotations.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/spec/integration/junit4/Junit4WithDifferentRunnerNoAnnotationsTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/spec/integration/junit4/Junit4WithDifferentRunnerTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/AccordionRunner.java" afterPath="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/integration/junit4/AccordionRunner.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/commands/LooseAssertTrueCommand.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/commands/LooseVerifyRowsCommand.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/spec/commands/LooseAssertTrueCommand.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/spec/commands/LooseAssertTrueCommandTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/spec/commands/LooseVerifyRowsCommand.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/spec/commands/LooseVerifyRowsCommandTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/integration/junit4/BaseAccordionJunit4Test.java" afterPath="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/integration/junit4/BaseAccordionJunit4TestCase.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/FixtureRunner.java" afterPath="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/FixtureRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/spec/commands/HamcrestCommandSpecTest.java" afterPath="$PROJECT_DIR$/src/test/spec/commands/HamcrestCommandSpecTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/spec/commands/TestAccordionRunner.java" afterPath="$PROJECT_DIR$/src/test/spec/commands/TestAccordionRunner.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/spec/commands/LooseAssertEqualsCommandTest.java" afterPath="$PROJECT_DIR$/src/test/spec/commands/LooseAssertEqualsCommandTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/spec/integration/junit4/Junit4WithDifferentRunnerNoAnnotationsTest.java" afterPath="$PROJECT_DIR$/src/test/spec/integration/junit4/Junit4WithDifferentRunnerNoAnnotationsTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/spec/integration/junit4/Junit4WithDifferentRunnerTest.java" afterPath="$PROJECT_DIR$/src/test/spec/integration/junit4/Junit4WithDifferentRunnerTest.java" />
     </list>
     <ignored path="accordion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,19 +53,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
       <breakpoint url="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/WithCommandsExecuter.java" line="21" class="net.tommalone.accordion.internal.WithCommandsExecuter" package="net.tommalone.accordion.internal">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/commands/LooseAssertEqualsCommand.java" line="16" class="net.tommalone.accordion.commands.LooseAssertEqualsCommand" package="net.tommalone.accordion.commands">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -137,104 +118,7 @@
     <favorites_list name="accordion" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="AbstractAccordionTestCase.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/integration/junit3/AbstractAccordionTestCase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="1" selection-start="450" selection-end="561" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FixtureRunner.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/FixtureRunner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="64" selection-start="1066" selection-end="1066" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Junit4WithDifferentRunnerTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/spec/integration/junit4/Junit4WithDifferentRunnerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="72" selection-start="560" selection-end="560" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Junit4WithDifferentRunnerNoAnnotationsTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/spec/integration/junit4/Junit4WithDifferentRunnerNoAnnotationsTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="460" selection-end="460" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/build.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="45" selection-start="2056" selection-end="2056" vertical-scroll-proportion="0.5492394">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Junit4WithDifferentRunnerNoAnnotations.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/spec/integration/junit4/Junit4WithDifferentRunnerNoAnnotations.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseAccordionJunit4Test.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/integration/junit4/BaseAccordionJunit4Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="6" selection-start="417" selection-end="417" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Junit3WithOutAnnotationTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/spec/integration/junit3/Junit3WithOutAnnotationTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="525" selection-end="525" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Junit4WithDifferentRunner.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/spec/integration/junit4/Junit4WithDifferentRunner.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WithAccordionBuilder.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/WithAccordionBuilder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="5" selection-start="139" selection-end="200" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -267,14 +151,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/test/spec/integration/junit4/Junit4.html" />
-        <option value="$PROJECT_DIR$/src/test/spec/commands/HamcrestCommandSpecTest.java" />
-        <option value="$PROJECT_DIR$/src/test/spec/integration/junit4/Junit4Test.java" />
-        <option value="$PROJECT_DIR$/src/test/spec/integration/junit4/Junit3Test.java" />
-        <option value="$PROJECT_DIR$/src/test/spec/integration/junit3/Junit3WithAnnotationTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/integration/junit4/Junit4AccordionRunner.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/WithAccordionBuilder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/integration/junit4/AccordionRunner.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/FixtureRunner.java" />
         <option value="$PROJECT_DIR$/src/test/spec/integration/junit3/Junit3WithOutAnnotationTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/integration/junit3/AbstractAccordionWithOutAnnotationsTestCase.java" />
@@ -282,7 +158,15 @@
         <option value="$PROJECT_DIR$/src/test/spec/integration/junit4/Junit4WithDifferentRunnerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/integration/junit4/BaseAccordionJunit4Test.java" />
         <option value="$PROJECT_DIR$/src/test/spec/integration/junit4/Junit4WithDifferentRunnerNoAnnotationsTest.java" />
+        <option value="$PROJECT_DIR$/src/test/spec/commands/LooseAssertEqualsCommandTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/commands/LooseAssertTrueCommand.java" />
+        <option value="$PROJECT_DIR$/src/test/spec/commands/LooseAssertTrueCommandTest.java" />
+        <option value="$PROJECT_DIR$/src/test/spec/commands/LooseAssertTrueCommand.html" />
+        <option value="$PROJECT_DIR$/src/test/spec/commands/LooseVerifyRowsCommandTest.java" />
+        <option value="$PROJECT_DIR$/src/test/spec/commands/LooseVerifyRowsCommand.html" />
+        <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/commands/LooseVerifyRowsCommand.java" />
         <option value="$PROJECT_DIR$/build.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/net/tommalone/accordion/integration/junit4/BaseAccordionJunit4TestCase.java" />
       </list>
     </option>
   </component>
@@ -322,6 +206,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -479,151 +364,10 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="accordion" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="accordion" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="accordion" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="accordion" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="internal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="accordion" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="accordion" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="accordion" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="integration" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="junit4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="accordion" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="accordion" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="accordion" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="integration" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="junit3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="accordion" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="accordion" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="accordion" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="commands" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Favorites" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -636,7 +380,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="options.lastSelected" value="preferences.editor" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
@@ -654,16 +398,16 @@
       <recent name="net.tommalone.accordion.internal" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="net.tommalone.accordion.commands" />
+      <recent name="commands" />
       <recent name="integration.junit4" />
       <recent name="net.tommalone.accordion.integration.junit3" />
       <recent name="net.tommalone.accordion.integration.junit4" />
-      <recent name="integration.junit3" />
-      <recent name="net.tommalone.accordion.commands" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/spec/commands" />
       <recent name="$PROJECT_DIR$/src/test/spec/integration/junit4" />
       <recent name="$PROJECT_DIR$/src/test/spec/integration/junit3" />
-      <recent name="$PROJECT_DIR$/src/test/spec/commands" />
     </key>
     <key name="IntroduceConstantDialog.RECENTS_KEY">
       <recent name="net.tommalone.accordion.internal.WithCommandBuilderTest" />
@@ -672,97 +416,7 @@
       <recent name="net.tommalone.accordion.integration.junit4" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Junit4WithDifferentRunnerNoAnnotationsTest">
-    <configuration default="false" name="LooseAssertEqualsCommandTest" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false">
-        <pattern>
-          <option name="PATTERN" value="commands.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="accordion" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="commands" />
-      <option name="MAIN_CLASS_NAME" value="commands.LooseAssertEqualsCommandTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="56721" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Junit4WithDifferentRunnerTest" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false">
-        <pattern>
-          <option name="PATTERN" value="integration.junit4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="accordion" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="integration.junit4" />
-      <option name="MAIN_CLASS_NAME" value="integration.junit4.Junit4WithDifferentRunnerTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Junit3WithAnnotationTest" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false">
-        <pattern>
-          <option name="PATTERN" value="integration.junit3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="accordion" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="integration.junit3" />
-      <option name="MAIN_CLASS_NAME" value="integration.junit3.Junit3WithAnnotationTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.All in accordion">
     <configuration default="false" name="Junit3WithOutAnnotationTest" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false">
         <pattern>
@@ -819,23 +473,84 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="true" type="PhpRunConfigurationType" factoryName="PHP">
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-        <option name="SBT.BeforeRunTask" enabled="false" />
-        <option name="ValidateXdebugSetup" enabled="true" />
-      </method>
+    <configuration default="false" name="LooseAssertTrueCommandTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false">
+        <pattern>
+          <option name="PATTERN" value="commands.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="accordion" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="commands" />
+      <option name="MAIN_CLASS_NAME" value="commands.LooseAssertTrueCommandTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
     </configuration>
-    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-        <option name="SBT.BeforeRunTask" enabled="false" />
-        <option name="ValidateXdebugSetup" enabled="true" />
-      </method>
+    <configuration default="false" name="LooseVerifyRowsCommandTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false">
+        <pattern>
+          <option name="PATTERN" value="commands.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="accordion" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="commands" />
+      <option name="MAIN_CLASS_NAME" value="commands.LooseVerifyRowsCommandTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="All in accordion" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" />
+      <module name="accordion" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
@@ -859,15 +574,6 @@
       <setting name="workingDirectory" value="$PROJECT_DIR$" />
       <setting name="sysFilter" value=".*" />
       <setting name="exampleFilter" value=".*" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-        <option name="SBT.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" adl_options="" air_descriptor_path="" air_program_params="" air_publisher_id="" air_root_dir_path="" air_run_mode="AppDescriptor" browser_family="FIREFOX" class_name="" debugger_sdk="Module SDK" html_or_swf_file_path="" launcher_type="OSDefault" main_class_name="" method_name="" module_name="" output_log_level="" package_name="" player_path="/Applications/Flash Player.app/Contents/MacOS/Flash Player" port="0" run_mode="HtmlOrSwfFile" run_trusted="false" scope="Class" socket_policy_port="0" url_to_launch="http://">
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -977,19 +683,6 @@
         <option name="SBT.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="FtpUpload" enabled="false">
-          <server_id />
-          <server_name />
-        </option>
-        <option name="Maven.BeforeRunTask" enabled="false" />
-        <option name="SBT.BeforeRunTask" enabled="false" />
-        <option name="ValidateXdebugSetup" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
       <module name="" />
       <setting name="path" value="" />
@@ -1007,11 +700,11 @@
       </method>
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.LooseAssertEqualsCommandTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.Junit4Test" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.Junit3Test" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.Junit3WithOutAnnotationTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.Junit4WithDifferentRunnerNoAnnotationsTest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.Junit3WithOutAnnotationTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.Junit4WithDifferentRunnerNoAnnotationsTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.LooseAssertTrueCommandTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.LooseVerifyRowsCommandTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.All in accordion" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -1022,6 +715,8 @@
   <component name="SvnConfiguration" maxAnnotateRevisions="500">
     <option name="USER" value="" />
     <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
     <option name="LAST_MERGED_REVISION" />
     <option name="MERGE_DRY_RUN" value="false" />
     <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
@@ -1064,10 +759,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="2477" height="1418" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="22" width="1601" height="1028" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32819384" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24935567" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1075,14 +770,14 @@
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296845" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32742682" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270925" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289183" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24983902" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296845" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39987123" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24835256" sideWeight="0.67108166" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32742682" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.248067" sideWeight="0.67108166" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270925" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32819724" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1093,6 +788,15 @@
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
     <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
     <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
     <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
@@ -1137,122 +841,108 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/spec/commands/HamcrestCommandSpecTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/spec/integration/junit4/Junit4WithDifferentRunnerNoAnnotationsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="19" selection-end="887" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/spec/integration/junit3/Junit3WithAnnotation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/spec/integration/junit4/Junit4.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="6" selection-start="532" selection-end="532" vertical-scroll-proportion="-7.304348">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/spec/integration/junit3/Junit3WithOutAnnotation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/integration/junit4/AccordionRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="0" selection-start="3382" selection-end="3459" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/spec/integration/junit3/Junit3WithAnnotationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="52" selection-start="475" selection-end="475" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/FixtureRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="64" selection-start="1066" selection-end="1066" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/WithAccordionBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="5" selection-start="139" selection-end="200" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/spec/integration/junit3/Junit3WithOutAnnotationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="525" selection-end="525" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/spec/integration/junit4/Junit4WithDifferentRunner.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/integration/junit3/AbstractAccordionTestCase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="1" selection-start="450" selection-end="561" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="12" column="0" selection-start="460" selection-end="460" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/spec/integration/junit4/Junit4WithDifferentRunnerNoAnnotations.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/spec/integration/junit3/Junit3WithOutAnnotationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="525" selection-end="525" vertical-scroll-proportion="0.20705347" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/spec/integration/junit4/Junit4WithDifferentRunner.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/internal/WithAccordionBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="5" selection-start="139" selection-end="200" vertical-scroll-proportion="0.09556314" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/spec/commands/LooseAssertEqualsCommandTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="24" selection-start="144" selection-end="144" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/commands/LooseAssertTrueCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="47" selection-start="1018" selection-end="1018" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/integration/junit4/BaseAccordionJunit4Test.java">
+    <entry file="file://$PROJECT_DIR$/src/test/spec/commands/HamcrestCommandSpecTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="6" selection-start="417" selection-end="417" vertical-scroll-proportion="0.0">
+        <state line="13" column="4" selection-start="412" selection-end="482" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/spec/commands/LooseAssertTrueCommand.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="40" selection-start="384" selection-end="398" vertical-scroll-proportion="0.14719626">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/spec/commands/LooseAssertTrueCommandTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="29" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/spec/integration/junit4/Junit4WithDifferentRunnerTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/commands/LooseAssertEqualsCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="72" selection-start="560" selection-end="560" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="11" column="18" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/spec/integration/junit4/Junit4WithDifferentRunnerNoAnnotationsTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/spec/commands/LooseVerifyRowsCommand.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="460" selection-end="460" vertical-scroll-proportion="0.0">
+        <state line="12" column="18" selection-start="416" selection-end="416" vertical-scroll-proportion="-7.304348">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/spec/commands/LooseVerifyRowsCommandTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="60" selection-start="657" selection-end="657" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/commands/LooseVerifyRowsCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="853" selection-end="853" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="45" selection-start="2056" selection-end="2056" vertical-scroll-proportion="0.5492394">
+        <state line="49" column="45" selection-start="2056" selection-end="2056" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/tommalone/accordion/integration/junit4/BaseAccordionJunit4TestCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="536" selection-end="536" vertical-scroll-proportion="0.25483504">
           <folding />
         </state>
       </provider>
@@ -1270,11 +960,6 @@
               </list>
             </option>
           </splitter-proportions>
-        </settings>
-      </state>
-      <state key="Copyright.UI">
-        <settings>
-          <splitter-proportions />
         </settings>
       </state>
       <state key="FacetStructureConfigurable.UI">
@@ -1319,6 +1004,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -1334,11 +1020,6 @@
               </list>
             </option>
           </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <splitter-proportions />
         </settings>
       </state>
     </states>

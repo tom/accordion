@@ -6,7 +6,7 @@ import net.tommalone.accordion.internal.FixtureRunner;
 import net.tommalone.accordion.internal.WithAccordionBuilder;
 import org.junit.Test;
 
-public class BaseAccordionJunit4Test implements WithAccordionBuilder {
+public class BaseAccordionJunit4TestCase implements WithAccordionBuilder {
 
     @Override
     public void withAccordionBuilder(AccordionBuilder accordionBuilder) {

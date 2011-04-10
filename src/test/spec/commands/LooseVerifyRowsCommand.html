@@ -1,0 +1,30 @@
+<html xmlns:cn="http://www.concordion.org/2007/concordion"
+      xmlns:tom="http://www.tommalone.net">
+<head>
+    <title>Loose Assert Equals Command Test</title>
+    <link rel="stylesheet" href="../concordion.css" media="screen"/>
+</head>
+<body>
+<div class="example">
+    <h3>Loose Verify Rows command test</h3>
+    <table tom:looseVerifyRows="#name : foo.bar.foobar">
+        <thead>
+        <tr>
+            <th cn:assertEquals="#name">Name</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Tom</td>
+        </tr>
+        <tr>
+            <td>Joe</td>
+        </tr>
+        <tr>
+            <td>Mike</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

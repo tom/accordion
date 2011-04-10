@@ -1,8 +1,9 @@
 package commands;
 
+import net.tommalone.accordion.integration.junit4.AccordionRunner;
 import org.junit.runner.RunWith;
 
-@RunWith(TestAccordionRunner.class)
+@RunWith(AccordionRunner.class)
 public class LooseAssertEqualsCommandTest {
 
     public Foo getFoo() {
